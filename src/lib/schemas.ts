@@ -38,6 +38,8 @@ export const documentPatchSchema = z.object({
     .positive()
     .max(MAX_UPLOAD_BYTES, `File must be under ${MAX_UPLOAD_MB} MB`)
     .optional(),
+  /** Ask the server for its verdict without applying the change. */
+  check: z.boolean().optional(),
 });
 
 export type LoginInput = z.infer<typeof loginSchema>;
