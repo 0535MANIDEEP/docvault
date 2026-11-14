@@ -27,6 +27,14 @@ export const metadata: Metadata = {
   title: "DocVault — records with enforced access",
   description:
     "Document management with role-based access control enforced on both the UI and the API.",
+  openGraph: {
+    type: "website",
+    siteName: "DocVault",
+    url: "https://docvault-blond-rho.vercel.app/",
+    title: "DocVault — records with enforced access",
+    description:
+      "Role-based access control enforced on both the UI and the API. Viewer, reviewer and admin each see a different application.",
+  },
 };
 
 /**
