@@ -103,7 +103,7 @@ export default function LoginPage() {
                 spellCheck={false}
                 aria-invalid={Boolean(fieldErrors.username)}
                 aria-describedby={fieldErrors.username ? 'username-error' : undefined}
-                className="border border-rule bg-sheet px-3 py-2 text-sm text-ink outline-none placeholder:text-ink-soft/70 focus:border-ink"
+                className="border border-rule bg-sheet px-3 py-2 text-sm text-inkplaceholder:text-ink-soft/70 focus:border-ink"
                 placeholder="admin"
               />
               {fieldErrors.username ? (
@@ -126,7 +126,7 @@ export default function LoginPage() {
                 autoComplete="current-password"
                 aria-invalid={Boolean(fieldErrors.password)}
                 aria-describedby={fieldErrors.password ? 'password-error' : undefined}
-                className="border border-rule bg-sheet px-3 py-2 text-sm text-ink outline-none placeholder:text-ink-soft/70 focus:border-ink"
+                className="border border-rule bg-sheet px-3 py-2 text-sm text-inkplaceholder:text-ink-soft/70 focus:border-ink"
                 placeholder="admin"
               />
               {fieldErrors.password ? (

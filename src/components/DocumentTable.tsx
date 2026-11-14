@@ -175,7 +175,7 @@ export function DocumentTable() {
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Search by title"
-          className="w-full max-w-xs border border-rule bg-sheet px-3 py-2 text-sm text-ink outline-none placeholder:text-ink-soft/70 focus:border-ink"
+          className="w-full max-w-xs border border-rule bg-sheet px-3 py-2 text-sm text-inkplaceholder:text-ink-soft/70 focus:border-ink"
         />
 
         <label htmlFor="doc-status" className="sr-only">
@@ -185,7 +185,7 @@ export function DocumentTable() {
           id="doc-status"
           value={statusFilter}
           onChange={(event) => setStatusFilter(event.target.value as 'all' | DocStatus)}
-          className="border border-rule bg-sheet px-3 py-2 text-sm text-ink outline-none focus:border-ink"
+          className="border border-rule bg-sheet px-3 py-2 text-sm text-inkfocus:border-ink"
         >
           {STATUS_FILTERS.map((filter) => (
             <option key={filter.value} value={filter.value}>

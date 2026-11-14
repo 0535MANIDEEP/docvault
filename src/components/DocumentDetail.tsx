@@ -280,7 +280,7 @@ export function DocumentDetail({ id }: DocumentDetailProps) {
                             value={title}
                             onChange={(event) => setTitle(event.target.value)}
                             aria-invalid={Boolean(titleErrors.title)}
-                            className="border border-rule bg-sheet px-3 py-2 text-sm outline-none focus:border-ink"
+                            className="border border-rule bg-sheet px-3 py-2 text-smfocus:border-ink"
                           />
                           {titleErrors.title ? (
                             <p className="text-sm text-seal">{titleErrors.title}</p>

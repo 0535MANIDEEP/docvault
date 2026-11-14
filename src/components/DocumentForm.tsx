@@ -77,7 +77,7 @@ export function DocumentForm({ onCreated, onCancel }: DocumentFormProps) {
           onChange={(event) => setTitle(event.target.value)}
           aria-invalid={Boolean(fieldErrors.title)}
           aria-describedby={fieldErrors.title ? 'document-title-error' : 'document-title-hint'}
-          className="border border-rule bg-paper px-3 py-2 text-sm text-ink outline-none placeholder:text-ink-soft/70 focus:border-ink"
+          className="border border-rule bg-paper px-3 py-2 text-sm text-inkplaceholder:text-ink-soft/70 focus:border-ink"
           placeholder="Employee Handbook 2026"
         />
         {fieldErrors.title ? (
@@ -99,7 +99,7 @@ export function DocumentForm({ onCreated, onCancel }: DocumentFormProps) {
           id="document-status"
           value={status}
           onChange={(event) => setStatus(event.target.value as DocStatus)}
-          className="border border-rule bg-paper px-3 py-2 text-sm text-ink outline-none focus:border-ink"
+          className="border border-rule bg-paper px-3 py-2 text-sm text-inkfocus:border-ink"
         >
           {STATUS_OPTIONS.map((option) => (
             <option key={option.value} value={option.value}>

@@ -76,7 +76,7 @@ export function UploadDropzone({ documentId, onUploaded }: UploadDropzoneProps) 
         }}
         onDragLeave={() => setDragging(false)}
         onDrop={onDrop}
-        className={`flex cursor-pointer flex-col items-start gap-1 border border-dashed px-4 py-6 transition-colors ${
+        className={`flex cursor-pointer flex-col items-start gap-1 border border-dashed px-4 py-6 transition-colors focus-within:border-ink focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-seal ${
           dragging ? 'border-ink bg-sheet' : 'border-rule bg-paper hover:border-ink-soft'
         }`}
       >
