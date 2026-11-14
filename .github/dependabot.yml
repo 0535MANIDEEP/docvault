@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      dev-dependencies:
+        dependency-type: development
+      production-dependencies:
+        dependency-type: production
+    ignore:
+      # Already fixed by an npm override in package.json, which pins the
+      # transitive copy to minimatch 11. Dependabot cannot bump it on its own
+      # because @typescript-eslint/typescript-estree still asks for ^10, and
+      # every attempt to satisfy the advisory that way fails the install.
+      - dependency-name: minimatch
+        dependency-type: indirect
+        advisory-id: GHSA-g3hv-75wg-m249
