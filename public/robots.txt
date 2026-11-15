@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://docvault-blond-rho.vercel.app/sitemap.xml

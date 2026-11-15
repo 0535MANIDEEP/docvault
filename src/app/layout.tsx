@@ -24,6 +24,10 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://docvault-blond-rho.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
   title: "DocVault — records with enforced access",
   description:
     "Document management with role-based access control enforced on both the UI and the API.",
@@ -34,6 +38,18 @@ export const metadata: Metadata = {
     title: "DocVault — records with enforced access",
     description:
       "Role-based access control enforced on both the UI and the API. Viewer, reviewer and admin each see a different application.",
+    images: [{ url: "/og.png", width: 1920, height: 913, alt: "DocVault document list" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DocVault — records with enforced access",
+    description:
+      "Role-based access control enforced on both the UI and the API. Viewer, reviewer and admin each see a different application.",
+    images: ["/og.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
