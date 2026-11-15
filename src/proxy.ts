@@ -30,5 +30,5 @@ export default function proxy(request: NextRequest) {
 export const config = {
   // Public crawler assets must stay anonymous-reachable: a 307 to /login is
   // an unindexable OG image. Everything else stays behind the guard.
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|og.png|robots.txt|sitemap.xml).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|og.png|robots.txt|sitemap.xml|ec92b3cc5962c7ff54372e67dc3bb789.txt).*)'],
 };
